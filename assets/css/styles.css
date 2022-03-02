@@ -1,0 +1,65 @@
+/*GLOBAL STYLES*/
+body {
+    margin:0px;
+    padding:0px;
+    font-family: 'Oswald', sans-serif;
+    background-color:#fefefe;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: orange;
+}
+
+header #logoHeader {
+    height: 80px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: lighter;
+    font-size: 1.55vm;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: black;
+}
+
+header .boldButton {
+    background-color: red;
+    color: #fefefe;
+}
+
+header nav ul #dropDown {
+    display: block;
+    position: fixed;
+    top: 100px;
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header #iconBar {
+    display: flex;
+    
+}
+
+header a img {
+    height: inherit;
+}
+
+header #iconsNav {
+    display: flex;
+    justify-content: space-around;
+}

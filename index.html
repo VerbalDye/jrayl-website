@@ -10,51 +10,13 @@
 </head>
 
 <body>
-
-    <div id="navbar">
-        <p id="logoMobile"><a href="home"><img id="logo" src="jrayl-logo-full-alt.png" /></a></p>
-        <div><a href="https://www.prime-business.net/jrayl"><i
-                    style="font-size:2rem; color:white; position:fixed; left:.5rem; top:.5rem; padding:.5rem;"
-                    class="fas fa-shopping-cart"></i></a></div>
-        <div id="menuIcon" onclick="animateIcon()">
-            <div id="bar1">&nbsp;</div>
-
-            <div id="bar2">&nbsp;</div>
-
-            <div id="bar3">&nbsp;</div>
-        </div>
-    </div>
-
-    <div id="menu">
-        <ul>
-            <li><a href="jobs">Join Our Team</a></li>
-            <li><a href="drivers">Drivers</a></li>
-            <li><a href="shipping">Shipping</a></li>
-            <li><a href="sustainability">Sustainability</a></li>
-            <li><a href="studentapprenticeship">Apprenticeship Program</a></li>
-            <li><a href="mod">Minority Owned Division</a></li>
-            <li><a href="news">News</a></li>
-            <li><a href="about-us">About Us</a></li>
-            <li><a href="contact-us">Contact Us</a></li>
-            <li id="menu-buttons"><a href="pod-request">POD Request</a></li>
-            <li id="menu-buttons"><a href="tel:18444657295">844-GO-JRAYL</a></li>
-            <li id="menu-buttons"><a href="https://jrayl.truckright.com/drivers?RS=Our20%Company20%Website">Drivers
-                    Apply Here</a></li>
-            <li id="menu-buttons"><a
-                    href="https://recruiting.ultipro.com/JRA1000JRAY/JobBoard/88bfd202-f546-4747-a1a6-09c6e1fd6f58/?q=&o=postedDateDesc&w=&wc=&we=&wpst=">All
-                    Other Positions Apply Here</a></li>
-        </ul>
-    </div>
-
-    <div id="navbarDesktop">
-        <div id="menuDesktop">
-            <div id="iconsNav"><a href="https://www.prime-business.net/jrayl"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <div id="desktopLogo"><a href="home"><img alt="J. Rayl Transport" src="jrayl-logo-full.png" /></a></div>
+    <header>
+        <a href="home"><img id="logoHeader" alt="J. Rayl Transport" src="./assets/images/jrayl-logo-full-alt.png" /></a>
+        <nav>
             <ul>
                 <li><a href="jobs">Join Our Team</a></li>
                 <li id="driverDrop"><a href="drivers">Drivers <i class="fas fa-caret-down"></i></a>
-                    <ul style="padding-left:0px;" id="dropDown">
+                    <ul id="dropDown">
                         <li><a href="drivers">Company Driver</a></li>
                         <br />
                         <li><a href="owner-operator">Owner/Operator</a></li>
@@ -75,32 +37,38 @@
                 <li><a href="news">News</a></li>
                 <li><a href="about-us">About Us</a></li>
                 <li><a href="contact-us">Contact Us</a></li>
-                <li><a style="color:white" href="pod-request" id="callNow">POD Request</a></li>
-                <li><a style="color:white" href="tel:18444657295" id="callNow">844-GO-JRAYL</a></li>
-                <li><a style="color:white; cursor: pointer;" id="applyNow">Apply Now</a></li>
+                <li><a href="pod-request" class="boldButton">POD Request</a></li>
+                <li><a href="tel:18444657295" class="boldButton">844-GO-JRAYL</a></li>
+                <li><a id="applyNow" class="boldButton">Apply Now</a></li>
+                <ul id="iconBar">
+                    <li><a href="https://www.facebook.com/JRaylTransport/"><img alt="Facebook"
+                                src="./assets/images/iconmonstr-facebook-6.svg" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC7C2fn1vPZfNKLLg2jJ5pPg"><img alt="Youtube"
+                                src="./assets/images/iconmonstr-youtube-6.svg" /></a></li>
+                    <li><a href="https://twitter.com/jrayl_transport"><img alt="Twitter"
+                                src="./assets/images/iconmonstr-twitter-3.svg" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/j.-rayl-transport-inc."><img alt="Linkedin"
+                                src="./assets/images/iconmonstr-linkedin-3.svg" /></a></li>
+                    <li><a href="https://www.instagram.com/jrayltransport/?hl=en"><img alt="instagram"
+                                src="./assets/images/iconmonstr-instagram-11.svg" /></a></li>
+                    <li><a href="https://squareup.com/store/jrayl"><img alt="Company store"
+                                src="./assets/images/iconmonstr-shop-1.svg" /></a></li>
+                </ul>
             </ul>
-            <div id="iconsNav"><a href="https://www.facebook.com/JRaylTransport/"><i
-                        class="fab fa-facebook-square"></i></a><a
-                    href="https://www.youtube.com/channel/UC7C2fn1vPZfNKLLg2jJ5pPg"><i
-                        class="fab fa-youtube-square"></i></a><a href="https://twitter.com/jrayl_transport"><i
-                        class="fab fa-twitter-square"></i></a><a
-                    href="https://www.linkedin.com/company/j.-rayl-transport-inc."><i class="fab fa-linkedin"></i></a><a
-                    href="https://www.instagram.com/jrayltransport/?hl=en"><i class="fab fa-instagram"></i></a><a
-                    href="https://squareup.com/store/jrayl"><i class="fas fa-shopping-cart"></i></a></div>
-        </div>
-    </div>
 
-    <div class="popup-bg">
-        <div class="popup-content">
-            <div class="close-popup">+</div>
-            <p id="applyNowText">Apply Now!</p>
-            <a style="color:white;"
-                href="https://recruiting.ultipro.com/JRA1000JRAY/JobBoard/88bfd202-f546-4747-a1a6-09c6e1fd6f58/?q=&o=postedDateDesc&w=&wc=&we=&wpst="
-                id="popupApplyNonDrivers">All Other Positions Apply Here</a>
-            <a style="color:white;" href="https://jrayl.truckright.com/drivers?RS=Our20%Company20%Website"
-                id="popupApplyDrivers">Drivers Apply Here</a>
-        </div>
-    </div>
+            <div class="popup-bg">
+                <div class="popup-content">
+                    <div class="close-popup">+</div>
+                    <p id="applyNowText">Apply Now!</p>
+                    <a style="color:white;"
+                        href="https://recruiting.ultipro.com/JRA1000JRAY/JobBoard/88bfd202-f546-4747-a1a6-09c6e1fd6f58/?q=&o=postedDateDesc&w=&wc=&we=&wpst="
+                        id="popupApplyNonDrivers">All Other Positions Apply Here</a>
+                    <a style="color:white;" href="https://jrayl.truckright.com/drivers?RS=Our20%Company20%Website"
+                        id="popupApplyDrivers">Drivers Apply Here</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <div id="container" onclick="closeMenu()">
         <div id="headerVid">
@@ -151,30 +119,35 @@
         <div id="pageContent">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
             <div id="slide-container">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
