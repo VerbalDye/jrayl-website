@@ -1,4 +1,8 @@
-/*GLOBAL STYLES*/
+:root {
+    --primary-color: #880f0A;
+    --secondary-color: #fefefe;
+}
+
 body {
     margin:0px;
     padding:0px;
@@ -10,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: orange;
+    background-color: #fefefe;
 }
 
 header #logoHeader {
@@ -20,7 +24,7 @@ header #logoHeader {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
@@ -37,22 +41,34 @@ header nav ul li a {
 }
 
 header .boldButton {
-    background-color: red;
+    background-color: var(--primary-color);
     color: #fefefe;
+}
+
+header .boldButton:hover {
+    color: var(--secondary-color);
+    background-color: black;
+    border-bottom: darkred 5px solid;
 }
 
 header nav ul #dropDown {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 100px;
     background-color: red;
     padding-top: 10px;
     padding-bottom: 10px;
+    opacity: 0;
 }
 
 header #iconBar {
     display: flex;
-    
+    justify-content: right;
+}
+
+header #iconBar li a {
+    padding: 0;
+    margin: 0;
 }
 
 header a img {
@@ -62,4 +78,26 @@ header a img {
 header #iconsNav {
     display: flex;
     justify-content: space-around;
+}
+
+header .popup-bg {
+    position: fixed;
+    opacity: 0;
+    top: bottom;
+}
+
+
+.hero video {
+    display: inline-block;
+    width: 100%;
+}
+
+.hero #heroText {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.hero #heroText h1 {
+    text-align: center;
 }
