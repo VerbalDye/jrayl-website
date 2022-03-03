@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <title>JRayl Transport</title>
 </head>
 
 <body>
     <header>
-        <a href="home"><img id="logoHeader" alt="J. Rayl Transport" src="./assets/images/jrayl-logo-full-alt.png" /></a>
+        <a href="home"><img id="logoHeader" alt="J. Rayl Transport" src="./assets/images/jrayl-logo-full.png" /></a>
         <nav>
             <ul>
                 <li><a href="jobs">Join Our Team</a></li>
@@ -41,7 +44,7 @@
                 <li><a href="tel:18444657295" class="boldButton">844-GO-JRAYL</a></li>
                 <li><a id="applyNow" class="boldButton">Apply Now</a></li>
                 <ul id="iconBar">
-                    <li><a href="https://www.facebook.com/JRaylTransport/"><img alt="Facebook"
+                    <!-- <li><a href="https://www.facebook.com/JRaylTransport/"><img alt="Facebook"
                                 src="./assets/images/iconmonstr-facebook-6.svg" /></a></li>
                     <li><a href="https://www.youtube.com/channel/UC7C2fn1vPZfNKLLg2jJ5pPg"><img alt="Youtube"
                                 src="./assets/images/iconmonstr-youtube-6.svg" /></a></li>
@@ -52,7 +55,7 @@
                     <li><a href="https://www.instagram.com/jrayltransport/?hl=en"><img alt="instagram"
                                 src="./assets/images/iconmonstr-instagram-11.svg" /></a></li>
                     <li><a href="https://squareup.com/store/jrayl"><img alt="Company store"
-                                src="./assets/images/iconmonstr-shop-1.svg" /></a></li>
+                                src="./assets/images/iconmonstr-shop-1.svg" /></a></li> -->
                 </ul>
             </ul>
         </nav>
@@ -107,91 +110,51 @@
             </a>
         </div>
     </div>
-
-    <div id="pageContent">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <section class="video-carousel">
+        <div id="carouselVideoDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl604X_pOkM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6M_zSXR2ZfM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N5LyyveB-EM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div id="slide-container">
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
+    </section>
 
-                        <div class="glide__slide">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl604X_pOkM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                        <div class="glide__slide">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6M_zSXR2ZfM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                        <div class="glide__slide">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/N5LyyveB-EM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </ul>
-                </div>
-
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button onclick="checkPositionL()" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
-                            class="fas fa-chevron-left"></i></button>
-                    <button onclick="checkPositionR()" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
-                            class="fas fa-chevron-right"></i></button>
-                </div>
-
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button id="radioslide1" type="radio" style="background-color: black"
-                        onclick="document.getElementById('radioslide1').style.backgroundColor = 'black'; document.getElementById('radioslide2').style.backgroundColor = 'gray'; document.getElementById('radioslide3').style.backgroundColor = 'gray';"
-                        class="glide__bullet" data-glide-dir="=0">
-                        <button id="radioslide2" type="radio"
-                            onclick="document.getElementById('radioslide1').style.backgroundColor = 'gray'; document.getElementById('radioslide2').style.backgroundColor = 'black'; document.getElementById('radioslide3').style.backgroundColor = 'gray';"
-                            class="glide__bullet" data-glide-dir="=1">
-                            <button id="radioslide3" type="radio"
-                                onclick="document.getElementById('radioslide1').style.backgroundColor = 'gray'; document.getElementById('radioslide2').style.backgroundColor = 'gray'; document.getElementById('radioslide3').style.backgroundColor = 'black';"
-                                class="glide__bullet" data-glide-dir="=2">
-                </div>
-            </div>
-        </div>
-
-        <h1>Our Locations</h1>
-        <img id="jraylMap" src="jrayl_map2.png"></img>
+    <h1>Our Locations</h1>
+    <img id="jraylMap" src="jrayl_map2.png"></img>
     </div>
 
     <div id="footer">
@@ -212,7 +175,9 @@
             <img src="https://seal-akron.bbb.org/seals/black-seal-250-52-bbb-12275.png"></img>
         </a>
     </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

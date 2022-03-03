@@ -14,11 +14,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fefefe;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 header #logoHeader {
     height: 80px;
+    padding: 10px;
 }
 
 header nav ul {
@@ -27,6 +28,7 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    margin: 20px 0 20px 0;
 }
 
 header nav ul li a {
@@ -34,10 +36,16 @@ header nav ul li a {
     margin-left: 5px;
     margin-right: 5px;
     font-weight: lighter;
-    font-size: 1.55vm;
+    font-size: 24px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: var(--primary-color) 5px solid;
 }
 
 header .boldButton {
@@ -48,7 +56,7 @@ header .boldButton {
 header .boldButton:hover {
     color: var(--secondary-color);
     background-color: black;
-    border-bottom: darkred 5px solid;
+    border-bottom: var(--primary-color) 5px solid;
 }
 
 header nav ul #dropDown {
@@ -88,16 +96,31 @@ header .popup-bg {
 
 
 .hero video {
-    display: inline-block;
+    position: absolute;
+    top: 0;
     width: 100%;
+    z-index: -1000;
 }
 
 .hero #heroText {
-    display: inline-block;
     position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 266px;
 }
 
 .hero #heroText h1 {
-    text-align: center;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px black;
+    font-size: 48px;
+}
+
+.video-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.video-carousel #carouselVideoDark {
+    width: 560px;
 }
