@@ -1,31 +1,16 @@
-var driverDrop = document.getElementById("driverDrop");
-var dropDown = document.getElementById("dropDown");
-var onDrop = false;
-var onDriver = false;
+//Resize Header
+var heroVideo = document.getElementById("heroVideo");
 
-driverDrop.addEventListener("mouseover", function() {
-    onDriver = true;
-    showOrNo("driverOn");
-});
-driverDrop.addEventListener("mouseout", function() {
-    onDriver = false;
-    showOrNo("driverOut");
-});
+window.addEventListener("resize", resizeHero);
 
-dropDown.addEventListener("mouseover", function() {
-    onDrop = true;
-    showOrNo("dropOn");
-});
-dropDown.addEventListener("mouseout", function() {
-    onDrop = false;
-    showOrNo("dropOut");
-});
-
-var showOrNo = function(condition) {
-    if (onDrop || onDriver) {
-        dropDown.style.opacity = "1";
-    } else {
-        dropDown.style.opacity = "0";
-    }
+var resizeHero = function() {
+    var windowHeight = window.innerHeight + "px";
+    var windowWidth = window.innerHeight + "px";
+    heroVideo.style.height = windowHeight;
+    heroVideo.style.minWidth = windowWidth;
+    heroVideo.style.bottom = windowHeight;
+    heroVideo.style.top = "none"
+    console.log("Success");
 };
 
+resizeHero();

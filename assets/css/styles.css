@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -31,7 +31,7 @@ header nav ul {
     margin: 20px 0 20px 0;
 }
 
-header nav ul li a {
+header nav ul li .navOption {
     padding: 10px 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -42,7 +42,7 @@ header nav ul li a {
     color: var(--secondary-color);
 }
 
-header nav ul li a:hover {
+header nav ul li .navOption:hover {
     color: var(--secondary-color);
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: var(--primary-color) 5px solid;
@@ -59,16 +59,43 @@ header .boldButton:hover {
     border-bottom: var(--primary-color) 5px solid;
 }
 
-header nav ul #dropDown {
-    display: block;
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid rgba(0, 0, 0, 0);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
     position: absolute;
-    top: 100px;
-    color:black;
     background-color: var(--secondary-color);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    opacity: 0;
-}
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
 header #iconBar {
     display: flex;
@@ -109,10 +136,11 @@ header .popup-bg {
 
 .hero #heroVideo {
     position: absolute;
+    bottom: 1000px;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: -1000;
+    overflow: hidden;
 }
 
 .hero #aboutUs {
