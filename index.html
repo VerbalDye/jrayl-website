@@ -75,7 +75,7 @@
     <section class="hero">
         <div>
             <video id="heroVideo" autoplay muted loop>
-                <source src="./assets/images/headerVidPromo.mp4" type="video/mp4">
+                <source src="./assets/images/Website Video 2021.mp4" type="video/mp4">
             </video>
         </div>
         <div class="heroText">
@@ -87,7 +87,7 @@
             <div id="heroForm">
                 <h3>Want to join the Jrayl team</h3>
                 <p>Fill out this form and a member of our recruiting team will reach out to blah tim help</p>
-                <form>
+                <form action="./assets/php/contactform.php" method="POST">
                     <label for="name">Enter full name:</label>
                     <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
                     <br />
@@ -98,14 +98,14 @@
                     <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
                     <br />
                     <label for="exp">Select Level of Driving Experience</label>
-                    <select name="exp" id="exp">
+                    <select name="exp" id="exp" class="form-input">
                         <option value="" disabled selected>Please Choose</option>
                         <option value="CDL">I have a CDL</option>
                         <option value="options">Other options</option>
                         <option value="both">I have options and a CDL</option>
                     </select>
                     <br />
-                    <button>Submit</button>
+                    <button type="submit" class="form-input">Submit</button>
                 </form>
             </div>
         </div>

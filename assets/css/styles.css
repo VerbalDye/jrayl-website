@@ -95,11 +95,16 @@ header .popup-bg {
     top: bottom;
 }
 
+.hero {
+    height: 970px;
+}
+
 .hero .heroText {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 20px auto;
+    margin: 200px auto;
+    align-items: flex-start;
 }
 
 .hero #heroVideo {
@@ -121,6 +126,11 @@ header .popup-bg {
     padding: 10px;
     border-radius: 15px;
     border: black solid 2px;
+}
+
+.hero #heroForm .form-input {
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .hero #heroText h1 {
