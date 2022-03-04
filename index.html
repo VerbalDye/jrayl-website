@@ -18,7 +18,7 @@
         <nav>
             <ul>
                 <li><a href="jobs">Join Our Team</a></li>
-                <li id="driverDrop"><a href="drivers">Drivers <i class="fas fa-caret-down"></i></a>
+                <li><a href="drivers" id="driverDrop">Drivers <i class="fas fa-caret-down"></i></a>
                     <ul id="dropDown">
                         <li><a href="drivers">Company Driver</a></li>
                         <br />
@@ -74,11 +74,39 @@
 
     <section class="hero">
         <div>
-            <video autoplay muted loop>
+            <video id="heroVideo" autoplay muted loop>
                 <source src="./assets/images/headerVidPromo.mp4" type="video/mp4">
             </video>
-            <div id="heroText">
-                <h1>DRIVE FOR JRAYL</h1>
+        </div>
+        <div class="heroText">
+            <div id="aboutUs">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus recusandae corrupti
+                    laboriosam, repellat fugiat dolore beatae praesentium excepturi blanditiis est eveniet eos. Eum
+                    optio numquam, deserunt sit odio sequi blanditiis!</h1>
+            </div>
+            <div id="heroForm">
+                <h3>Want to join the Jrayl team</h3>
+                <p>Fill out this form and a member of our recruiting team will reach out to blah tim help</p>
+                <form>
+                    <label for="name">Enter full name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                    <br />
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                    <br />
+                    <label for="phone">Enter phone number:</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                    <br />
+                    <label for="exp">Select Level of Driving Experience</label>
+                    <select name="exp" id="exp">
+                        <option value="" disabled selected>Please Choose</option>
+                        <option value="CDL">I have a CDL</option>
+                        <option value="options">Other options</option>
+                        <option value="both">I have options and a CDL</option>
+                    </select>
+                    <br />
+                    <button>Submit</button>
+                </form>
             </div>
         </div>
     </section>

@@ -63,7 +63,8 @@ header nav ul #dropDown {
     display: block;
     position: absolute;
     top: 100px;
-    background-color: red;
+    color:black;
+    background-color: var(--secondary-color);
     padding-top: 10px;
     padding-bottom: 10px;
     opacity: 0;
@@ -94,20 +95,32 @@ header .popup-bg {
     top: bottom;
 }
 
+.hero .heroText {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
 
-.hero video {
+.hero #heroVideo {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: -1000;
 }
 
-.hero #heroText {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 266px;
+.hero #aboutUs {
+    width: 50%;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero #heroForm {
+    background-color: rgba(255, 255, 255, .7);
+    padding: 10px;
+    border-radius: 15px;
+    border: black solid 2px;
 }
 
 .hero #heroText h1 {
