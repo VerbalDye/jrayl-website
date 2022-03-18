@@ -124,6 +124,7 @@ header .popup-bg {
 
 .hero {
     height: 970px;
+    overflow: hidden;
 }
 
 .hero .heroText {
@@ -132,13 +133,15 @@ header .popup-bg {
     width: 80%;
     margin: 200px auto;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .hero #heroVideo {
     position: absolute;
-    bottom: 1000px;
     top: 0;
     left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
     z-index: -1000;
     overflow: hidden;
 }
