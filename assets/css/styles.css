@@ -8,6 +8,7 @@ body {
     padding:0px;
     font-family: 'Oswald', sans-serif;
     background-color:#fefefe;
+    overflow-x: hidden;
   }
 
 header {
@@ -123,27 +124,21 @@ header .popup-bg {
 }
 
 .hero {
-    height: 970px;
-    overflow: hidden;
+    border-bottom: solid 10px black;
 }
 
 .hero .heroText {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
     width: 80%;
-    margin: 200px auto;
-    align-items: flex-start;
-    overflow: hidden;
+    margin: 0 auto;
 }
 
 .hero #heroVideo {
     position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
     z-index: -1000;
-    overflow: hidden;
 }
 
 .hero #aboutUs {
