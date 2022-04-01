@@ -32,10 +32,15 @@ var resizeHero = function() {
     }
 };
 
-var setStyle = function(element, style, value) {
-
+var detatchHeader = function() {
+    if (scrollY > 0) {
+        headerEl.className = "header-scroll";
+    } else {
+        headerEl.className = "";
+    }
 }
 
 resizeHero();
 
 onresize = resizeHero;
+onscroll = detatchHeader;
