@@ -177,6 +177,18 @@ header .popup-bg {
     font-size: 48px;
 }
 
+#page-content {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-header {
+    color: var(--primary-color);
+    margin: 20px;
+    text-align: center;
+}
+
 .video-carousel {
     display: flex;
     justify-content: center;
@@ -184,6 +196,16 @@ header .popup-bg {
 
 .video-carousel #carouselVideoDark {
     width: 560px;
+}
+
+.map-container {
+    width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.map {
+    margin-top: -50px;
 }
 
 #footer {
