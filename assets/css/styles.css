@@ -179,18 +179,54 @@ header .popup-bg {
 
 #page-content {
     text-align: center;
-    width: 90%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 75px auto;
+
+}
+
+#page-content p {
+    font-size: 24px;
 }
 
 .section-header {
     color: var(--primary-color);
     margin: 20px;
     text-align: center;
+    font-size: 48px;
 }
 
 #banner-home {
     background-color: var(--primary-color);
+    text-align: center;
+    padding: 30px;
+}
+
+#icon-display {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 24px;
+}
+
+.icon-text {
+    margin: 10px;
+}
+
+.icon-text i {
+    font-size: 86px;
+    color: var(--primary-color);
+}
+
+.icon-text i::before{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    /* width: 100px;
+    height: 100px; */
+    padding: 25px;
+}
+
+#bannerBBB img {
+    height: 52px;
 }
 
 .video-carousel {
@@ -210,7 +246,7 @@ header .popup-bg {
 }
 
 .map {
-    margin-top: -50px;
+    margin-top: -60px;
     margin-bottom: 25px;
 }
 
