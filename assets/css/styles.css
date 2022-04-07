@@ -189,9 +189,14 @@ header .popup-bg {
     text-align: center;
 }
 
+#banner-home {
+    background-color: var(--primary-color);
+}
+
 .video-carousel {
     display: flex;
     justify-content: center;
+    margin: 25px;
 }
 
 .video-carousel #carouselVideoDark {
@@ -206,8 +211,38 @@ header .popup-bg {
 
 .map {
     margin-top: -50px;
+    margin-bottom: 25px;
 }
 
 #footer {
-    height: 1000px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#footer-text {
+    display: flex;
+    justify-content: center;
+}
+
+#icons {
+    margin-bottom: 7px;
+}
+
+#icons a {
+    text-decoration: none;
+}
+
+.bi {
+    color: var(--secondary-color);
+    margin: 4px;
+    font-size: 24px;
+}
+
+#footer-text a {
+    margin: 5px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
